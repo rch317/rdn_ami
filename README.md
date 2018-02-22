@@ -1,2 +1,3 @@
 # rdn_ami
-Testing an RDN ami build
+
+Testing ami build using packer through CodeBuild
