@@ -5,7 +5,7 @@ phases:
   pre_build:
     commands:
       - echo "Installing HashiCorp Packer..."
-      - curl -qL -o packer.zip https://releases.hashicorp.com/packer/0.12.3/packer_0.12.3_linux_amd64.zip && unzip packer.zip
+      - curl -qL -o packer.zip https://releases.hashicorp.com/packer/1.2.1/packer_1.2.1_linux_386.zip && unzip packer.zip
       - echo "Installing jq..."
       - curl -qL -o jq https://stedolan.github.io/jq/download/linux64/jq && chmod +x ./jq
       - echo "Validating amzn-linux_packer-template.json"
@@ -27,4 +27,3 @@ phases:
     commands:
       - echo "HashiCorp Packer build completed on `date`"
 ### eof
-# Added to test webhook
