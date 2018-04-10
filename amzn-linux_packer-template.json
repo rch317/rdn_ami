@@ -8,7 +8,7 @@
         "type": "amazon-ebs",
         "region": "{{user `aws_region`}}",
 	"vpc_id": "vpc-818ce8e8",
-	"subnet_id": "subnet-9d6208f4s",
+	"subnet_id": "subnet-9d6208f4",
         "instance_type": "t2.micro",
         "ssh_username": "ec2-user",
         "ami_name": "{{user `aws_ami_name`}}",
