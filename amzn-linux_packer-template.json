@@ -26,7 +26,6 @@
       "Name": "amazon-linux_{{ timestamp }}"
     },
     "security_group_ids": ["sg-addc9ec6"],
-    "ssh_interface":"private_ip",
     "ami_description": "Create base AMI image with packer",
     "associate_public_ip_address": "true",
     "vpc_id": "{{user `vpc`}}",
