@@ -22,6 +22,8 @@ phases:
       - aws configure set aws_secret_access_key `./jq -r '.SecretAccessKey' aws_credentials.json`
       - aws configure set aws_session_token `./jq -r '.Token' aws_credentials.json`
       - echo "Building HashiCorp Packer template, amzn-linux_packer-template.json"
+      - ip a
+      - ifconfig -a
       - export PACKER_LOG=debug && ./packer build amzn-linux_packer-template.json
   post_build:
     commands:
