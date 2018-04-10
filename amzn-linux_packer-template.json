@@ -25,6 +25,7 @@
     "tags": {
       "Name": "amazon-linux_{{ timestamp }}"
     },
+    "ssh_interface":"private_ip",
     "security_group_ids": ["sg-addc9ec6"],
     "ami_description": "Create base AMI image with packer",
     "associate_public_ip_address": "true",
