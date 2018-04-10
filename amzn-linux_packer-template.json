@@ -19,7 +19,7 @@
         "owners": ["415115050499"],
         "most_recent": true
     },
-    "instance_type": "t2.micro",
+    "instance_type": "m4.large",
     "ssh_username": "ec2-user",
     "ami_name": "amazon-linux_{{ timestamp }}",
     "tags": {
