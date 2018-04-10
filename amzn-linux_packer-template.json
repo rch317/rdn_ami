@@ -8,12 +8,14 @@
         "type": "amazon-ebs",
         "region": "{{user `aws_region`}}",
 	"vpc_id": "vpc-818ce8e8",
-	"subnet_id": "subnet-ea620883",
+	"subnet_id": "subnet-9d6208f4s",
         "instance_type": "t2.micro",
         "ssh_username": "ec2-user",
         "ami_name": "{{user `aws_ami_name`}}",
         "ami_description": "Customized Amazon Linux",
         "associate_public_ip_address": "true",
+	"security_group_ids": ["sg-48868a21"],
+        "ssh_interface":"private_ip",
         "source_ami_filter": {
             "filters": {
                 "virtualization-type": "hvm",
